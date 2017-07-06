@@ -1,0 +1,36 @@
+{
+	"name": "malcolm",
+	"version": "1.0.1",
+	"description": "A node.js module that lets API developers using HAPI or Express write less boilerplate code by leveraging their API metadata",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/comcast/malcolm.git"
+	},
+	"author": "Mike Fine <mike_fine@cable.comcast.com>",
+	"license": "Apache 2.0",
+	"dependencies": {
+		"async": "~2.4.1",
+		"moment": "~2.18.1",
+		"moment-timezone": "~0.5.13",
+		"raml-parser": "~0.8.18",
+		"raml2html": "~1.4",
+		"underscore-contrib": "~0.3.0"
+	},
+	"devDependencies": {
+		"mocha": "~3.4.2",
+		"chai": "~4.0.2",
+		"eslint": "~4.0.0",
+		"sinon": "~2.3.5",
+		"sinon-chai": "~2.11.0",
+		"istanbul": "~0.4.5",
+		"proxyquire": "~1.8.0"
+	},
+	"scripts": {
+		"start": "echo \"Error: not meant to be run stand-alone\" && exit 1",
+		"test": "istanbul cover _mocha",
+		"lint": "eslint . --ext .js",
+		"pretest": "npm run lint",
+		"env": "env"
+	}
+}

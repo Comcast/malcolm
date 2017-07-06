@@ -1,0 +1,45 @@
+#%RAML 0.8
+title: Test project
+baseUri: http://localhost:3000/{version}
+version: v1
+
+/getFakeDataTestModeOnKeyIsSet:
+    get:
+        queryParameters:
+            someParam:
+                type: string
+                required: false
+
+/postFakeDataTest:
+    post:
+          queryParameters:
+            someParam:
+                type: string
+                required: false
+
+/getFakeDataTestModeOnKeyIsNotSet:
+    get:
+        queryParameters:
+            someParam:
+                type: string
+                required: false
+
+/getFakeDataTestModeOffKeyIsSet:
+    get:
+        queryParameters:
+            someParam:
+                type: string
+                required: false
+
+/getFakeDataTestNoFile:
+    get:
+
+/getFakeDataTestIncorrectJson:
+    get:
+
+/addFakeDataResponseTest:
+    get:
+
+/clearFakeDataResponseTest:
+    get:
+

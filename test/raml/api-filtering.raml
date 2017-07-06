@@ -1,0 +1,418 @@
+#%RAML 0.8
+title: Test project
+baseUri: http://localhost:3000/{version}
+version: v1
+# mediaType: application/json
+
+traits:
+    - getTraitQueryParametersPart1:
+            queryParameters:
+                getTestParm0:
+                    description: It's a test parameter #0.
+                    type: string
+                    required: false
+                getTestParm1:
+                    description: It's a test parameter #1.
+                    type: string
+                    required: true
+    - getTraitQueryParametersPart2:
+            queryParameters:
+                getTestParm2:
+                    description: It's a test parameter #2.
+                    type: integer
+                    required: false
+                getTestParm3:
+                    description: It's a test parameter #3.
+                    type: number
+                    required: false
+    - postTraitQueryParametersPart1:
+            queryParameters:
+                postTestParm0:
+                    description: It's a test parameter #0.
+                    type: string
+                    required: false
+                postTestParm1:
+                    description: It's a test parameter #1.
+                    type: string
+                    required: true
+    - postTraitQueryParametersPart2:
+            queryParameters:
+                postTestParm2:
+                    description: It's a test parameter #2.
+                    type: integer
+                    required: false
+                postTestParm3:
+                    description: It's a test parameter #3.
+                    type: number
+                    required: false
+    - putTraitQueryParametersPart1:
+            queryParameters:
+                putTestParm0:
+                    description: It's a test parameter #0.
+                    type: string
+                    required: false
+                putTestParm1:
+                    description: It's a test parameter #1.
+                    type: string
+                    required: true
+    - putTraitQueryParametersPart2:
+            queryParameters:
+                putTestParm2:
+                    description: It's a test parameter #2.
+                    type: integer
+                    required: false
+                putTestParm3:
+                    description: It's a test parameter #3.
+                    type: number
+                    required: false
+    - deleteTraitQueryParametersPart1:
+            queryParameters:
+                deleteTestParm0:
+                    description: It's a test parameter #0.
+                    type: string
+                    required: false
+                deleteTestParm1:
+                    description: It's a test parameter #1.
+                    type: string
+                    required: true
+    - deleteTraitQueryParametersPart2:
+            queryParameters:
+                deleteTestParm2:
+                    description: It's a test parameter #2.
+                    type: integer
+                    required: false
+                deleteTestParm3:
+                    description: It's a test parameter #3.
+                    type: number
+                    required: false
+    - getTraitHeaders:
+            headers:
+                getTestParm0:
+                    description: It's a test parameter #0.
+                    type: string
+                    required: false
+                getTestParm1:
+                    description: It's a test parameter #1.
+                    type: string
+                    required: true
+                getTestParm2:
+                    description: It's a test parameter #2.
+                    type: string
+                    required: false
+                getTestParm3:
+                    description: It's a test parameter #3.
+                    type: string
+                    required: false
+    - postTraitHeaders:
+            headers:
+                postTestParm0:
+                    description: It's a test parameter #0.
+                    type: string
+                    required: false
+                postTestParm1:
+                    description: It's a test parameter #1.
+                    type: string
+                    required: true
+                postTestParm2:
+                    description: It's a test parameter #2.
+                    type: string
+                    required: false
+                postTestParm3:
+                    description: It's a test parameter #3.
+                    type: string
+                    required: false
+    - putTraitHeaders:
+            headers:
+                putTestParm0:
+                    description: It's a test parameter #0.
+                    type: string
+                    required: false
+                putTestParm1:
+                    description: It's a test parameter #1.
+                    type: string
+                    required: true
+                putTestParm2:
+                    description: It's a test parameter #2.
+                    type: string
+                    required: false
+                putTestParm3:
+                    description: It's a test parameter #3.
+                    type: string
+                    required: false
+    - deleteTraitHeaders:
+            headers:
+                deleteTestParm0:
+                    description: It's a test parameter #0.
+                    type: string
+                    required: false
+                deleteTestParm1:
+                    description: It's a test parameter #1.
+                    type: string
+                    required: true
+                deleteTestParm2:
+                    description: It's a test parameter #2.
+                    type: string
+                    required: false
+                deleteTestParm3:
+                    description: It's a test parameter #3.
+                    type: string
+                    required: false
+    - traitMultipartParameters:
+            body:
+                multipart/form-data:
+                    formParameters:
+                        postTestParm0:
+                            description: It's a test parameter #0.
+                            type: string
+                            required: false
+                        postTestParm1:
+                            description: It's a test parameter #1.
+                            type: string
+                            required: true
+                        postTestParm2:
+                            description: It's a test parameter #2.
+                            type: integer
+                            required: false
+                        postTestParm3:
+                            description: It's a test parameter #3.
+                            type: number
+                            required: false
+
+# ---------- Test entry point ----------
+
+# test parameters
+/testQueryParameters:
+    displayName: Test filtering
+    description: for the test purpose
+    securedBy: [ null ]
+    get:
+        queryParameters:
+            getTestParm0:
+                description: It's a test parameter #0.
+                type: string
+                required: false
+            getTestParm1:
+                description: It's a test parameter #1.
+                type: string
+                required: true
+            getTestParm2:
+                description: It's a test parameter #2.
+                type: integer
+                required: false
+            getTestParm3:
+                description: It's a test parameter #3.
+                type: number
+                required: false
+    post:
+        queryParameters:
+            postTestParm0:
+                description: It's a test parameter #0.
+                type: string
+                required: false
+            postTestParm1:
+                description: It's a test parameter #1.
+                type: string
+                required: true
+            postTestParm2:
+                description: It's a test parameter #2.
+                type: integer
+                required: false
+            postTestParm3:
+                description: It's a test parameter #3.
+                type: number
+                required: false
+    put:
+        queryParameters:
+            putTestParm0:
+                description: It's a test parameter #0.
+                type: string
+                required: false
+            putTestParm1:
+                description: It's a test parameter #1.
+                type: string
+                required: true
+            putTestParm2:
+                description: It's a test parameter #2.
+                type: integer
+                required: false
+            putTestParm3:
+                description: It's a test parameter #3.
+                type: number
+                required: false
+    delete:
+        queryParameters:
+            deleteTestParm0:
+                description: It's a test parameter #0.
+                type: string
+                required: false
+            deleteTestParm1:
+                description: It's a test parameter #1.
+                type: string
+                required: true
+            deleteTestParm2:
+                description: It's a test parameter #2.
+                type: integer
+                required: false
+            deleteTestParm3:
+                description: It's a test parameter #3.
+                type: number
+                required: false
+
+# test headers
+/testHeaders:
+    displayName: Test Header
+    description: for the test purpose
+    securedBy: [ null ]
+    get:
+        headers:
+            getTestParm0:
+                description: It's a test parameter #0.
+                type: string
+                required: false
+            getTestParm1:
+                description: It's a test parameter #1.
+                type: string
+                required: true
+            getTestParm2:
+                description: It's a test parameter #2.
+                type: string
+                required: false
+            getTestParm3:
+                description: It's a test parameter #3.
+                type: string
+                required: false
+
+    post:
+        headers:
+            postTestParm0:
+                description: It's a test parameter #0.
+                type: string
+                required: false
+            postTestParm1:
+                description: It's a test parameter #1.
+                type: string
+                required: true
+            postTestParm2:
+                description: It's a test parameter #2.
+                type: string
+                required: false
+            postTestParm3:
+                description: It's a test parameter #3.
+                type: string
+                required: false
+
+    put:
+        headers:
+            putTestParm0:
+                description: It's a test parameter #0.
+                type: string
+                required: false
+            putTestParm1:
+                description: It's a test parameter #1.
+                type: string
+                required: true
+            putTestParm2:
+                description: It's a test parameter #0.
+                type: string
+                required: false
+            putTestParm3:
+                description: It's a test parameter #1.
+                type: string
+                required: false
+
+    delete:
+        headers:
+            deleteTestParm0:
+                description: It's a test parameter #0.
+                type: string
+                required: false
+            deleteTestParm1:
+                description: It's a test parameter #1.
+                type: string
+                required: true
+            deleteTestParm2:
+                description: It's a test parameter #2.
+                type: string
+                required: false
+            deleteTestParm3:
+                description: It's a test parameter #3.
+                type: string
+                required: false
+
+
+# test multipart/form-data
+/testMultipartFormData:
+    displayName: Test multipart/form-data
+    description: for the test purpose
+    securedBy: [ null ]
+    post:
+        body:
+            multipart/form-data:
+                formParameters:
+                    postTestParm0:
+                        description: It's a test parameter #0.
+                        type: string
+                        required: false
+                    postTestParm1:
+                        description: It's a test parameter #1.
+                        type: string
+                        required: true
+                    postTestParm2:
+                        description: It's a test parameter #2.
+                        type: integer
+                        required: false
+                    postTestParm3:
+                        description: It's a test parameter #3.
+                        type: number
+                        required: false
+
+/testUriParameters:
+        get:
+        /{getTestParm0}-{getTestParm1}-{getTestParm2}-{getTestParm3}-{getTestParm4}-{getTestParm5}:
+            get:
+            uriParameters:
+                    getTestParm0:
+                     description: Test Parameter #0
+                    getTestParm1:
+                     description: Test Parameter #1
+                    getTestParm2:
+                     description: Test Parameter #2
+                    getTestParm3:
+                     description: Test Parameter #3
+
+
+# test parameters with traits
+/testQueryParameters/traits:
+    displayName: Test
+    description: for the test purpose
+    securedBy: [ null ]
+    get:
+        is: [getTraitQueryParametersPart1, getTraitQueryParametersPart2]
+    post:
+        is: [postTraitQueryParametersPart1, postTraitQueryParametersPart2]
+    put:
+        is: [putTraitQueryParametersPart1, putTraitQueryParametersPart2]
+    delete:
+        is: [deleteTraitQueryParametersPart1, deleteTraitQueryParametersPart2]
+
+# test headers with traits
+/testHeaders/traits:
+    displayName: Test Header
+    description: for the test purpose
+    securedBy: [ null ]
+    get:
+        is: [getTraitHeaders]
+    post:
+        is: [postTraitHeaders]
+    put:
+        is: [putTraitHeaders]
+    delete:
+        is: [deleteTraitHeaders]
+
+# test multipart/form-data with traits
+/testMultipartFormData/traits:
+    displayName: Test multipart/form-data
+    description: for the test purpose
+    securedBy: [ null ]
+    post:
+        is: [traitMultipartParameters]

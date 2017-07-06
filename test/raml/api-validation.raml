@@ -1,0 +1,670 @@
+#%RAML 0.8
+title: Test project
+baseUri: http://localhost:3000/{version}
+version: v1
+# mediaType: application/json
+
+traits:
+    - getTraitQueryParametersPart1:
+            queryParameters:
+                getTestParm0:
+                    description: for a test min length
+                    type: string
+                    required: false
+                    minLength: 2
+                getTestParm1:
+                    description: for a test max length
+                    type: string
+                    required: false
+                    maxLength: 3
+                getTestParm2:
+                    description: for a test minimum
+                    type: integer
+                    required: false
+                    minimum: 5
+    - getTraitQueryParametersPart2:
+            queryParameters:
+                getTestParm3:
+                    description: for a test maximum
+                    type: integer
+                    required: false
+                    maximum: 6
+                getTestParm4:
+                    description: for a test pattern
+                    type: string
+                    required: false
+                    pattern: ^\+1.{2,3}$
+                getTestParm5:
+                    description: for a test enum
+                    required: false
+                    enum: [a, b]
+    - postTraitQueryParametersPart1:
+            queryParameters:
+                postTestParm0:
+                    description: for a test min length
+                    type: string
+                    required: false
+                    minLength: 2
+                postTestParm1:
+                    description: for a test max length
+                    type: string
+                    required: false
+                    maxLength: 3
+                postTestParm2:
+                    description: for a test minimum
+                    type: integer
+                    required: false
+                    minimum: 5
+    - postTraitQueryParametersPart2:
+            queryParameters:
+                postTestParm3:
+                    description: for a test maximum
+                    type: integer
+                    required: false
+                    maximum: 6
+                postTestParm4:
+                    description: for a test pattern
+                    type: string
+                    required: false
+                    pattern: ^\+1.{2,3}$
+                postTestParm5:
+                    description: for a test enum
+                    required: false
+                    enum: [a, b]
+    - putTraitQueryParametersPart1:
+            queryParameters:
+                putTestParm0:
+                    description: for a test min length
+                    type: string
+                    required: false
+                    minLength: 2
+                putTestParm1:
+                    description: for a test max length
+                    type: string
+                    required: false
+                    maxLength: 3
+                putTestParm2:
+                    description: for a test minimum
+                    type: integer
+                    required: false
+                    minimum: 5
+    - putTraitQueryParametersPart2:
+            queryParameters:
+                putTestParm3:
+                    description: for a test maximum
+                    type: integer
+                    required: false
+                    maximum: 6
+                putTestParm4:
+                    description: for a test pattern
+                    type: string
+                    required: false
+                    pattern: ^\+1.{2,3}$
+                putTestParm5:
+                    description: for a test enum
+                    required: false
+                    enum: [a, b]
+    - deleteTraitQueryParametersPart1:
+            queryParameters:
+                deleteTestParm0:
+                    description: for a test min length
+                    type: string
+                    required: false
+                    minLength: 2
+                deleteTestParm1:
+                    description: for a test max length
+                    type: string
+                    required: false
+                    maxLength: 3
+                deleteTestParm2:
+                    description: for a test minimum
+                    type: integer
+                    required: false
+                    minimum: 5
+    - deleteTraitQueryParametersPart2:
+            queryParameters:
+                deleteTestParm3:
+                    description: for a test maximum
+                    type: integer
+                    required: false
+                    maximum: 6
+                deleteTestParm4:
+                    description: for a test pattern
+                    type: string
+                    required: false
+                    pattern: ^\+1.{2,3}$
+                deleteTestParm5:
+                    description: for a test enum
+                    required: false
+                    enum: [a, b]
+
+    - getTraitHeaders:
+            headers:
+                getTestParm3:
+                    description: for a test maximum
+                    type: integer
+                    required: false
+                    maximum: 6
+                getTestParm4:
+                    description: for a test pattern
+                    type: string
+                    required: false
+                    pattern: ^\+1.{2,3}$
+                getTestParm5:
+                    description: for a test enum
+                    required: false
+                    enum: [a, b]
+                getTestParm0:
+                    description: for a test min length
+                    type: string
+                    required: false
+                    minLength: 2
+                getTestParm1:
+                    description: for a test max length
+                    type: string
+                    required: false
+                    maxLength: 3
+                getTestParm2:
+                    description: for a test minimum
+                    type: integer
+                    required: false
+                    minimum: 5
+    - postTraitHeaders:
+            headers:
+                postTestParm3:
+                    description: for a test maximum
+                    type: integer
+                    required: false
+                    maximum: 6
+                postTestParm4:
+                    description: for a test pattern
+                    type: string
+                    required: false
+                    pattern: ^\+1.{2,3}$
+                postTestParm5:
+                    description: for a test enum
+                    required: false
+                    enum: [a, b]
+                postTestParm0:
+                    description: for a test min length
+                    type: string
+                    required: false
+                    minLength: 2
+                postTestParm1:
+                    description: for a test max length
+                    type: string
+                    required: false
+                    maxLength: 3
+                postTestParm2:
+                    description: for a test minimum
+                    type: integer
+                    required: false
+                    minimum: 5
+    - putTraitHeaders:
+            headers:
+                putTestParm3:
+                    description: for a test maximum
+                    type: integer
+                    required: false
+                    maximum: 6
+                putTestParm4:
+                    description: for a test pattern
+                    type: string
+                    required: false
+                    pattern: ^\+1.{2,3}$
+                putTestParm5:
+                    description: for a test enum
+                    required: false
+                    enum: [a, b]
+                putTestParm0:
+                    description: for a test min length
+                    type: string
+                    required: false
+                    minLength: 2
+                putTestParm1:
+                    description: for a test max length
+                    type: string
+                    required: false
+                    maxLength: 3
+                putTestParm2:
+                    description: for a test minimum
+                    type: integer
+                    required: false
+                    minimum: 5
+    - deleteTraitHeaders:
+            headers:
+                deleteTestParm3:
+                    description: for a test maximum
+                    type: integer
+                    required: false
+                    maximum: 6
+                deleteTestParm4:
+                    description: for a test pattern
+                    type: string
+                    required: false
+                    pattern: ^\+1.{2,3}$
+                deleteTestParm5:
+                    description: for a test enum
+                    required: false
+                    enum: [a, b]
+                deleteTestParm0:
+                    description: for a test min length
+                    type: string
+                    required: false
+                    minLength: 2
+                deleteTestParm1:
+                    description: for a test max length
+                    type: string
+                    required: false
+                    maxLength: 3
+                deleteTestParm2:
+                    description: for a test minimum
+                    type: integer
+                    required: false
+                    minimum: 5
+
+    - postTraitMultipartParameters:
+            body:
+                multipart/form-data:
+                    formParameters:
+                        postTestParm3:
+                            description: for a test maximum
+                            type: integer
+                            required: false
+                            maximum: 6
+                        postTestParm4:
+                            description: for a test pattern
+                            type: string
+                            required: false
+                            pattern: ^\+1.{2,3}$
+                        postTestParm5:
+                            description: for a test enum
+                            required: false
+                            enum: [a, b]
+                        postTestParm0:
+                            description: for a test min length
+                            type: string
+                            required: false
+                            minLength: 2
+                        postTestParm1:
+                            description: for a test max length
+                            type: string
+                            required: false
+                            maxLength: 3
+                        postTestParm2:
+                            description: for a test minimum
+                            type: integer
+                            required: false
+                            minimum: 5
+
+# ---------- Test entry point ----------
+
+# test parameters
+/testQueryParameters:
+    displayName: Test
+    description: for the test purpose
+    securedBy: [ null ]
+    get:
+        queryParameters:
+            getTestParm0:
+                description: for a test min length
+                type: string
+                required: false
+                minLength: 2
+            getTestParm1:
+                description: for a test max length
+                type: string
+                required: false
+                maxLength: 3
+            getTestParm2:
+                description: for a test minimum
+                type: integer
+                required: false
+                minimum: 5
+            getTestParm3:
+                description: for a test maximum
+                type: integer
+                required: false
+                maximum: 6
+            getTestParm4:
+                description: for a test pattern
+                type: string
+                required: false
+                pattern: ^\+1.{2,3}$
+            getTestParm5:
+                description: for a test enum
+                required: false
+                enum: [a, b]
+    post:
+        queryParameters:
+            postTestParm0:
+                description: for a test min length
+                type: string
+                required: false
+                minLength: 2
+            postTestParm1:
+                description: for a test max length
+                type: string
+                required: false
+                maxLength: 3
+            postTestParm2:
+                description: for a test minimum
+                type: integer
+                required: false
+                minimum: 5
+            postTestParm3:
+                description: for a test maximum
+                type: integer
+                required: false
+                maximum: 6
+            postTestParm4:
+                description: for a test pattern
+                type: string
+                required: false
+                pattern: ^\+1.{2,3}$
+            postTestParm5:
+                description: for a test enum
+                required: false
+                enum: [a, b]
+    put:
+        queryParameters:
+            putTestParm0:
+                description: for a test min length
+                type: string
+                required: false
+                minLength: 2
+            putTestParm1:
+                description: for a test max length
+                type: string
+                required: false
+                maxLength: 3
+            putTestParm2:
+                description: for a test minimum
+                type: integer
+                required: false
+                minimum: 5
+            putTestParm3:
+                description: for a test maximum
+                type: integer
+                required: false
+                maximum: 6
+            putTestParm4:
+                description: for a test pattern
+                type: string
+                required: false
+                pattern: ^\+1.{2,3}$
+            putTestParm5:
+                description: for a test enum
+                required: false
+                enum: [a, b]
+    delete:
+        queryParameters:
+            deleteTestParm0:
+                description: for a test min length
+                type: string
+                required: false
+                minLength: 2
+            deleteTestParm1:
+                description: for a test max length
+                type: string
+                required: false
+                maxLength: 3
+            deleteTestParm2:
+                description: for a test minimum
+                type: integer
+                required: false
+                minimum: 5
+            deleteTestParm3:
+                description: for a test maximum
+                type: integer
+                required: false
+                maximum: 6
+            deleteTestParm4:
+                description: for a test pattern
+                type: string
+                required: false
+                pattern: ^\+1.{2,3}$
+            deleteTestParm5:
+                description: for a test enum
+                required: false
+                enum: [a, b]
+
+# test headers
+/testHeaders:
+    displayName: Test Header
+    description: for the test purpose
+    securedBy: [ null ]
+    get:
+        headers:
+            getTestParm0:
+                description: for a test min length
+                type: string
+                required: false
+                minLength: 2
+            getTestParm1:
+                description: for a test max length
+                type: string
+                required: false
+                maxLength: 3
+            getTestParm2:
+                description: for a test minimum
+                type: integer
+                required: false
+                minimum: 5
+            getTestParm3:
+                description: for a test maximum
+                type: integer
+                required: false
+                maximum: 6
+            getTestParm4:
+                description: for a test pattern
+                type: string
+                required: false
+                pattern: ^\+1.{2,3}$
+            getTestParm5:
+                description: for a test enum
+                required: false
+                enum: [a, b]
+    post:
+        headers:
+            postTestParm0:
+                description: for a test min length
+                type: string
+                required: false
+                minLength: 2
+            postTestParm1:
+                description: for a test max length
+                type: string
+                required: false
+                maxLength: 3
+            postTestParm2:
+                description: for a test minimum
+                type: integer
+                required: false
+                minimum: 5
+            postTestParm3:
+                description: for a test maximum
+                type: integer
+                required: false
+                maximum: 6
+            postTestParm4:
+                description: for a test pattern
+                type: string
+                required: false
+                pattern: ^\+1.{2,3}$
+            postTestParm5:
+                description: for a test enum
+                required: false
+                enum: [a, b]
+    put:
+        headers:
+            putTestParm0:
+                description: for a test min length
+                type: string
+                required: false
+                minLength: 2
+            putTestParm1:
+                description: for a test max length
+                type: string
+                required: false
+                maxLength: 3
+            putTestParm2:
+                description: for a test minimum
+                type: integer
+                required: false
+                minimum: 5
+            putTestParm3:
+                description: for a test maximum
+                type: integer
+                required: false
+                maximum: 6
+            putTestParm4:
+                description: for a test pattern
+                type: string
+                required: false
+                pattern: ^\+1.{2,3}$
+            putTestParm5:
+                description: for a test enum
+                required: false
+                enum: [a, b]
+    delete:
+        headers:
+            deleteTestParm0:
+                description: for a test min length
+                type: string
+                required: false
+                minLength: 2
+            deleteTestParm1:
+                description: for a test max length
+                type: string
+                required: false
+                maxLength: 3
+            deleteTestParm2:
+                description: for a test minimum
+                type: integer
+                required: false
+                minimum: 5
+            deleteTestParm3:
+                description: for a test maximum
+                type: integer
+                required: false
+                maximum: 6
+            deleteTestParm4:
+                description: for a test pattern
+                type: string
+                required: false
+                pattern: ^\+1.{2,3}$
+            deleteTestParm5:
+                description: for a test enum
+                required: false
+                enum: [a, b]
+
+# test multipart/form-data
+/testMultipartFormData:
+    displayName: Test multipart/form-data
+    description: for the test purpose
+    securedBy: [ null ]
+    post:
+        body:
+            multipart/form-data:
+                formParameters:
+                    postTestParm0:
+                        description: for a test min length
+                        type: string
+                        required: false
+                        minLength: 2
+                    postTestParm1:
+                        description: for a test max length
+                        type: string
+                        required: false
+                        maxLength: 3
+                    postTestParm2:
+                        description: for a test minimum
+                        type: integer
+                        required: false
+                        minimum: 5
+                    postTestParm3:
+                        description: for a test maximum
+                        type: integer
+                        required: false
+                        maximum: 6
+                    postTestParm4:
+                        description: for a test pattern
+                        type: string
+                        required: false
+                        pattern: ^\+1.{2,3}$
+                    postTestParm5:
+                        description: for a test enum
+                        required: false
+                        enum: [a, b]
+
+/testUriParameters:
+    get:
+    /{getTestParm0}-{getTestParm1}-{getTestParm2}-{getTestParm3}-{getTestParm4}-{getTestParm5}:
+        get:
+        uriParameters:
+            getTestParm0:
+                description: for a test min length
+                type: string
+                required: false
+                minLength: 2
+            getTestParm1:
+                description: for a test max length
+                type: string
+                required: false
+                maxLength: 3
+            getTestParm2:
+                description: for a test minimum
+                type: integer
+                required: false
+                minimum: 5
+            getTestParm3:
+                description: for a test maximum
+                type: integer
+                required: false
+                maximum: 6
+            getTestParm4:
+                description: for a test pattern
+                type: string
+                required: false
+                pattern: ^\+1.{2,3}$
+            getTestParm5:
+                description: for a test enum
+                required: false
+                enum: [a, b]
+
+# test parameters with traits
+/testQueryParameters/traits:
+    displayName: Test
+    description: for the test purpose
+    securedBy: [ null ]
+    get:
+        is: [getTraitQueryParametersPart1, getTraitQueryParametersPart2]
+    post:
+        is: [postTraitQueryParametersPart1, postTraitQueryParametersPart2]
+    put:
+        is: [putTraitQueryParametersPart1, putTraitQueryParametersPart2]
+    delete:
+        is: [deleteTraitQueryParametersPart1, deleteTraitQueryParametersPart2]
+
+# test headers with traits
+/testHeaders/traits:
+    displayName: Test Header
+    description: for the test purpose
+    securedBy: [ null ]
+    get:
+        is: [getTraitHeaders]
+    post:
+        is: [postTraitHeaders]
+    put:
+        is: [putTraitHeaders]
+    delete:
+        is: [deleteTraitHeaders]
+
+# test multipart/form-data with traits
+/testMultipartFormData/traits:
+    displayName: Test multipart/form-data
+    description: for the test purpose
+    securedBy: [ null ]
+    post:
+        is: [postTraitMultipartParameters]
