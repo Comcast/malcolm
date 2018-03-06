@@ -11,8 +11,8 @@
 	"license": "Apache 2.0",
 	"dependencies": {
 		"async": "~2.4.1",
-		"moment": "~2.18.1",
-		"moment-timezone": "~0.5.13",
+		"moment": "~2.21.0",
+		"moment-timezone": "~0.5.14",
 		"raml-parser": "~0.8.18",
 		"raml2html": "~1.4",
 		"underscore-contrib": "~0.3.0"
