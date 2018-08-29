@@ -189,9 +189,9 @@ exports.deleteFavorite  = deleteFavorite;
 
 ## (Almost) Real Examples
 
-See the git repository [malcolm-sample-express-client](https://github.com/comcast/malcolm-sample-express-client) for a simple example API server implemented with malcolm and Express.
+See the git repository [malcolm-sample-express-client](https://github.com/ComcastSamples/malcolm-sample-express-client) for a simple example API server implemented with malcolm and Express.
 
-See the git repository [malcolm-sample-hapi-client](https://github.com/comcast/malcolm-sample-hapi-client) for a simple API server implemented with malcolm and HAPI.
+See the git repository [malcolm-sample-hapi-client](https://github.com/ComcastSamples/malcolm-sample-hapi-client) for a simple API server implemented with malcolm and HAPI.
 
 NOTE: The resource names within the RAML files of these examples are purposefully named to be illustrative and are not "proper" REST resource names.
 
@@ -404,7 +404,7 @@ responses to return *instead of invoking the "real" route function*.
 
 ### Uploading dynamic fake data responses
 
-See the sample repos [malcolm-sample-express-client](https://github.com/comcast/malcolm-sample-express-client) and [malcolm-sample-hapi-client](https://github.com/comcast/malcolm-sample-hapi-client) for examples of how to add routes to allow testers to dynamically upload fake data responses (and clear them).
+See the sample repos [malcolm-sample-express-client](https://github.com/ComcastSamples/malcolm-sample-express-client) and [malcolm-sample-hapi-client](https://github.com/ComcastSamples/malcolm-sample-hapi-client) for examples of how to add routes to allow testers to dynamically upload fake data responses (and clear them).
 
 Basically, this entails:
 
