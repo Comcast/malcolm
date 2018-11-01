@@ -8,7 +8,7 @@
 		"url": "https://github.com/comcast/malcolm.git"
 	},
 	"author": "Mike Fine <mike_fine@cable.comcast.com>",
-	"license": "Apache 2.0",
+	"license": "Apache-2.0",
 	"dependencies": {
 		"async": "~2.4.1",
 		"moment": "~2.21.0",
